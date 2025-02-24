@@ -27,7 +27,7 @@ import MyAppointments from './pages/MyAppointments'
 import MyProfile from './pages/MyProfile'
 import Verify from './pages/Verify'
 import Hospitals from "./pages/Hospitals";
-
+import HospitalDoctors from "./pages/HospitalDoctors"
 const App = () => {
   const { dToken } = useContext(DoctorContext);
   const { aToken } = useContext(AdminContext);
@@ -61,6 +61,8 @@ const App = () => {
               <Route path='/my-appointments' element={<MyAppointments />} />
               <Route path='/my-profile' element={<MyProfile />} />
               <Route path='/verify' element={<Verify />} />
+              <Route path="/hospital/:id" element={<HospitalDoctors />} />
+
         </Routes>
       </div>
     </div>
