@@ -26,6 +26,7 @@ import Appointment from './pages/Appointment'
 import MyAppointments from './pages/MyAppointments'
 import MyProfile from './pages/MyProfile'
 import Verify from './pages/Verify'
+import Hospitals from "./pages/Hospitals";
 
 const App = () => {
   const { dToken } = useContext(DoctorContext);
@@ -49,6 +50,7 @@ const App = () => {
               <Route path="/doctor-dashboard" element={<DoctorDashboard />} />
               <Route path="/doctor-appointments" element={<DoctorAppointments />} />
               <Route path="/doctor-profile" element={<DoctorProfile />} />
+              <Route path='/hospitals' element={<Hospitals/>} />
               <Route path='/' element={<Home />} />
               <Route path='/doctors' element={<Doctors />} />
               <Route path='/doctors/:speciality' element={<Doctors />} />

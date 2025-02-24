@@ -7,7 +7,7 @@ import appointmentModel from "../models/appointmentModel.js";
 import { v2 as cloudinary } from "cloudinary";
 import stripe from "stripe";
 import razorpay from "razorpay";
-
+import hospitalAdminModel from '../models/hospitalAdminModel.js'
 // Gateway Initialize
 const stripeInstance = new stripe(process.env.STRIPE_SECRET_KEY);
 // const razorpayInstance = new razorpay({
@@ -345,8 +345,18 @@ const verifyStripe = async (req, res) => {
     res.json({ success: false, message: error.message });
   }
 };
-
+const hospitalList = async (req, res) => {
+  try {
+    const hospitals = await hospitalAdminModel.find({});
+    console.log(hospitals)
+    res.json({ success: true, hospitals });
+  } catch (error) {
+    console.log(error);
+    res.json({ success: false, message: error.message });
+  }
+};
 export {
+  hospitalList,
   loginUser,
   registerUser,
   getProfile,
