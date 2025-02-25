@@ -14,6 +14,9 @@ import {
   verifyStripe,
   hospitalList,
 } from "../controllers/userController.js";
+
+import { getDoctorsByAdminId } from "../controllers/doctorController.js";
+
 import upload from "../middleware/multer.js";
 import authUser from "../middleware/authUser.js";
 const userRouter = express.Router();
@@ -36,5 +39,6 @@ userRouter.post("/payment-razorpay", authUser, paymentRazorpay);
 userRouter.post("/verifyRazorpay", authUser, verifyRazorpay);
 userRouter.post("/payment-stripe", authUser, paymentStripe);
 userRouter.post("/verifyStripe", authUser, verifyStripe);
+userRouter.get("/doctors/:id", getDoctorsByAdminId);
 
 export default userRouter;

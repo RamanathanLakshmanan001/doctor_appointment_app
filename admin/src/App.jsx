@@ -28,6 +28,7 @@ import MyProfile from './pages/MyProfile'
 import Verify from './pages/Verify'
 import Hospitals from "./pages/Hospitals";
 import HospitalDoctors from "./pages/HospitalDoctors"
+
 const App = () => {
   const { dToken } = useContext(DoctorContext);
   const { aToken } = useContext(AdminContext);
