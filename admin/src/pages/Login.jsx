@@ -139,7 +139,7 @@ const Login = () => {
                 />
               </div>
 
-              <button className="bg-primary text-white w-full py-3 rounded-lg text-base font-medium hover:bg-blue-700 transition duration-200 transform hover:scale-[1.02]">
+              <button className="bg-primary text-white w-full py-3 rounded-lg text-base font-medium hover:bg-green-700 transition duration-200 transform hover:scale-[1.02]">
                 Login
               </button>
             </form>
