@@ -1,13 +1,13 @@
-# Prescripto - Doctor Appointment Web App
 
-**Prescripto** is a full-stack web application designed to make healthcare more accessible by simplifying the process of booking doctor appointments. It offers three levels of login: **Patient**, **Doctor**, and **Admin**, each with distinct features tailored to their roles. The app integrates **online payment gateways (Stripe and Razorpay)** to facilitate seamless and secure payments. Built using the **MERN stack** (MongoDB, Express.js, React.js, and Node.js), Prescripto provides an efficient, user-friendly experience for both patients and healthcare providers.
+# **Medify** - Doctor Appointment Web App
+
+**Medify** is a full-stack web application designed to make healthcare more accessible by simplifying the process of booking doctor appointments. It offers three levels of login: **Patient**, **Doctor**, and **Admin**, each with distinct features tailored to their roles. Built using the **MERN stack** (MongoDB, Express.js, React.js, and Node.js), Medify provides an efficient, user-friendly experience for both patients and healthcare providers.
 
 ## 🛠️ Tech Stack
 
 - **Frontend**: React.js
 - **Backend**: Node.js, Express.js
 - **Database**: MongoDB
-- **Payment Gateways**: Stripe, Razorpay
 - **Authentication**: JSON Web Token (JWT)
 
 ## 🔑 Key Features
@@ -17,7 +17,6 @@
 - **Patient Login**: 
   - Patients can sign up, log in, and book appointments with doctors.
   - Manage appointments (view, cancel, or reschedule).
-  - Secure online payment options available (cash, Stripe, Razorpay).
   - User profile with editable information (name, email, address, gender, birthday, profile picture).
 
 - **Doctor Login**:
@@ -48,7 +47,7 @@
 
 ## 📄 About Page
 
-- Provides information about **Prescripto’s vision** and mission.
+- Provides information about **Medify’s vision** and mission.
 - **Why Choose Us** section highlights:
   - **Efficiency**: Streamlined appointment process.
   - **Convenience**: Online booking and payment.
@@ -66,7 +65,6 @@
 - Displays detailed information about the selected doctor:
   - **Profile picture, qualification, experience**, and a brief description.
   - **Appointment booking form**: Choose date, time, and payment method.
-  - Online payment options: **Cash, Stripe, or Razorpay**.
   - **Related doctors** section at the bottom.
 - Users need to **create an account or log in** before booking an appointment.
 
@@ -102,22 +100,14 @@
 - **Profile Management**:
   - Doctors can update their **profile information**, including description, fees, address, and availability status.
 
-## 💳 Payment Integration
-
-- Supports multiple payment methods:
-  - **Cash Payment**
-  - **Stripe Integration**
-  - **Razorpay Integration**
-- Ensures a secure and smooth payment experience for users.
-
 ## 🌐 Project Setup
 
 To set up and run this project locally:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/prescripto.git
-   cd prescripto
+   git clone https://github.com/your-username/medify.git
+   cd medify
    ```
 
 2. **Install Dependencies**:
@@ -132,8 +122,7 @@ To set up and run this project locally:
      ```env
      MONGO_URI=your_mongodb_connection_string
      JWT_SECRET=your_jwt_secret
-     STRIPE_API_KEY=your_stripe_api_key
-     RAZORPAY_API_KEY=your_razorpay_api_key
+
      ```
 
 4. **Run the Application**:
@@ -144,7 +133,7 @@ To set up and run this project locally:
 ## 📦 Folder Structure
 
 ```plaintext
-prescripto/
+medify/
 ├── client/          # Frontend (React.js)
 ├── server/          # Backend (Node.js, Express.js)
 ├── models/          # MongoDB Schemas
@@ -161,10 +150,7 @@ prescripto/
 
 We welcome contributions! Please feel free to submit issues, fork the repository, and open pull requests.
 
-
 ## 🌟 Acknowledgements
 
-- Thanks to the developers and contributors of MongoDB, Express.js, React.js, Node.js, Stripe, and Razorpay for their fantastic tools and libraries.
-
----
+- Thanks to the developers and contributors of MongoDB, Express.js, React.js, Node.js  for their fantastic tools and libraries.
 
